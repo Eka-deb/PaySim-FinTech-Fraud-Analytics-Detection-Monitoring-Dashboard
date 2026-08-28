@@ -77,7 +77,7 @@ This project report is presented in a power point. The presentation contain
 
 ▪️ Recommendation.
 
-![
+![PaySim-FinTech-Fraud-Analytics-Detection-Monitoring-Dashboard](
 
 ## Project files
 project files can be seen under the repository file segment. The files contain: 
