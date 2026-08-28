@@ -54,8 +54,6 @@ Note on scope: The Executive Overview and Fraud & Risk Monitoring pages reflect 
 6. Fraud clusters in the highest value band: (from the Behavior & Transaction Pattern page, filtered to Amount_band = "High") Cash_Out and Transfer transactions carried fraud rates of 0.70% and 0.64% respectively within that band, well above the overall 0.13% baseline.
 7. Repeat-account risk exists: The SQL model specifically isolates origin accounts with more than one fraudulent transaction, and the highest-value fraud cases (several at 10,000,000 each) show large, deliberate transfers rather than small incremental ones . It's  worth a closer manual review of the flagged account list.
 
-![PaySim-FinTech-Fraud-Analytics-Detection-Monitoring-Dashboard](BI_Analysis_for_fintech_fraud.pdf)
-
 ## Recommendation 
 1. Rebuild the fraud-flagging logic. A 0.11% detection rate against a 100%-in-two-channels fraud pattern means the current system is not meaningfully working hence  it should be redesigned around transaction type and value, not treated as reliable in its current form.
 2. Apply extra scrutiny to Transfer and Cash_Out transactions, particularly those in the "High" amount band, where observed fraud rates are 5x the overall average.
@@ -79,7 +77,6 @@ This project report is presented in a power point. The presentation contain
 
 ▪️ Recommendation.
 
-![PaySim-FinTech-Fraud-Analytics-Detection-Monitoring-Dashboard](PaySim_Fraud_Analytics.pptx)
 
 ## Project files
 project files can be seen under the repository file segment. The files contain: 
