@@ -55,17 +55,20 @@ iv. Amount-band fraud concentration
 
 v. Repeat-offender account detection (HAVING count(*) > 1 on fraudulent transactions per origin account).
 
+<img width="554" height="468" alt="sql_script_screenshot" src="https://github.com/user-attachments/assets/83f86316-c78a-4eab-9c07-bf6d8c24938f" />
+
 ## Visualization (PowerBI)
 
 ▪️ Connected Power BI to the modeled PostgreSQL tables
 
 ▪️ Three linked dashboard pages was built with slicers on Fraud_status, Amount_band, step, and Transaction_type so a user can drill from headline KPIs down to individual flagged accounts.
 
-## Result
-[BI analysis for fintech fraud (1).pdf](https://github.com/user-attachments/files/31594935/BI.analysis.for.fintech.fraud.1.pdf)
+## Dashboard Overview
+<img width="783" height="440" alt="Executive_overview" src="https://github.com/user-attachments/assets/a2c143ae-fd32-4d05-a088-868c44496e98" />
 
+<img width="771" height="430" alt="Fraud_management" src="https://github.com/user-attachments/assets/caa641b1-3bd2-4d51-8971-fa9dbfd6df1b" />
 
-
+<img width="761" height="428" alt="Behavior_transaction_pattern" src="https://github.com/user-attachments/assets/e648931d-2651-4fa2-bd1d-e2b99a7afcce" />
 
 ## Key Insights 
 Note on scope: The Executive Overview and Fraud & Risk Monitoring pages reflect the full dataset (932 fraudulent transactions, 1.37bn fraud value). The Behavior & Transaction Pattern page is filtered to the "High" Amount_band slicer, so its totals (539 fraudulent transactions, 1.32bn fraud value, 103K accounts) describe that filtered slice only — they are not directly comparable to the full-dataset figures above.
