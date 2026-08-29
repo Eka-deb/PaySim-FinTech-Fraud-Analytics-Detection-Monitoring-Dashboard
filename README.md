@@ -61,6 +61,12 @@ v. Repeat-offender account detection (HAVING count(*) > 1 on fraudulent transact
 
 ▪️ Three linked dashboard pages was built with slicers on Fraud_status, Amount_band, step, and Transaction_type so a user can drill from headline KPIs down to individual flagged accounts.
 
+## Result
+[BI analysis for fintech fraud (1).pdf](https://github.com/user-attachments/files/31594935/BI.analysis.for.fintech.fraud.1.pdf)
+
+
+
+
 ## Key Insights 
 Note on scope: The Executive Overview and Fraud & Risk Monitoring pages reflect the full dataset (932 fraudulent transactions, 1.37bn fraud value). The Behavior & Transaction Pattern page is filtered to the "High" Amount_band slicer, so its totals (539 fraudulent transactions, 1.32bn fraud value, 103K accounts) describe that filtered slice only — they are not directly comparable to the full-dataset figures above.
 1. Scale: ~707K total transactions worth 127.05bn, averaging 179.72K per transaction.
