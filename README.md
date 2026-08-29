@@ -20,20 +20,29 @@ The goal was to turn raw transaction logs into a monitoring tool that management
 
 ## Business Questions 
 #### Executive Overview 
+
 ▪️ How is the transaction performance and transaction risk distribution?
 #### Fraud & Risk Monitoring 
+
 ▪️ How effective is the existing fraud mechanism?
+
 ▪️ Where should management focus on monitoring?
 #### Behavior & Transaction pattern
+
 ▪️ What transaction pattern is associated with fraud?
+
 ▪️ Are there accounts associated with repeated fraud?
 
 ## Action: Data Preparation, Transformation, Modeling & Visualization
 #### Data preparation (Excel/Power query)
+
 ▪️ Initial inspection and cleaning of the raw PaySim export prior to loading
 #### Transformation and Modelling 
+
 ▪️ Loaded cleaned data into a structured transactions table (step, transaction type, amount, origin/destination accounts and balances, fraud flags)
+
 ▪️ Analytical field were engineered   directly in the model: Amount_band (Low/Medium/High/Very high), Fraud_status, Fraud_flagged_status, Origin_balance_change, Destination_balance_change, and Hour_of_day (derived from step)
+
 ▪️ Wrote a structured SQL analysis script covering:
 I. Volume and value breakdowns by transaction type (with window functions for percentage-of-total)
 ii. Fraud rate and fraud value overall and by transaction type
@@ -42,7 +51,9 @@ iv. Amount-band fraud concentration
 v. Repeat-offender account detection (HAVING count(*) > 1 on fraudulent transactions per origin account).
 
 ## Visualization (PowerBI)
+
 ▪️ Connected Power BI to the modeled PostgreSQL tables
+
 ▪️ Three linked dashboard pages was built with slicers on Fraud_status, Amount_band, step, and Transaction_type so a user can drill from headline KPIs down to individual flagged accounts.
 
 ## Key Insights 
