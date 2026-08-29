@@ -44,10 +44,15 @@ The goal was to turn raw transaction logs into a monitoring tool that management
 ▪️ Analytical field were engineered   directly in the model: Amount_band (Low/Medium/High/Very high), Fraud_status, Fraud_flagged_status, Origin_balance_change, Destination_balance_change, and Hour_of_day (derived from step)
 
 ▪️ Wrote a structured SQL analysis script covering:
+
 I. Volume and value breakdowns by transaction type (with window functions for percentage-of-total)
+
 ii. Fraud rate and fraud value overall and by transaction type
+
 iii. Detection effectiveness (is_fraud vs. is_flagged) to quantify flagged vs. unflagged fraud
+
 iv. Amount-band fraud concentration
+
 v. Repeat-offender account detection (HAVING count(*) > 1 on fraudulent transactions per origin account).
 
 ## Visualization (PowerBI)
