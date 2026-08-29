@@ -9,6 +9,7 @@ This project analyzes transaction and fraud data from the PaySim dataset to eval
 
 ## Business Challenge 
 Digital and mobile money platforms process huge transaction volumes, and fraud even when statistically rare,  can carry outsized financial impact. The organization needed to know:
+
 ▪️ How much fraud is actually happening, and how much money is at risk
 
 ▪️ Whether the current automated fraud-flagging system is actually catching it
